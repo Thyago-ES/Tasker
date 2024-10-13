@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "./Button";
 import { Logo } from "./Logo";
-import { formatNameForURL } from "../utils/formatNameforURL";
+import { formatNameForURL } from "../utils/formatNameForURL";
 
 interface NavBarProps {
 	logged: boolean;
