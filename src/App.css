@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Epilogue", sans-serif;
+	font-weight: bold;
+}
+
+:root {
+	--main-color: #faf2d9;
+	--main-color-hover: #ded8c7;
+	--secondary-color: #dec985;
+	--secondary-color-hover: #baa45c;
+	--text-color: #050505;
+	--secondary-text-color: #f5f5f5;
+	--font-size-default: 1.2rem;
+}
+
+html {
+	font-size: 16px;
+}
+
+#root {
+	width: 100%;
+	min-height: 100vh;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.container {
+	max-width: 1920px;
+	min-height: 100vh;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	width: 13rem;
+}
+
+.btn {
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 1rem;
+
+	font-size: var(--font-size-default);
+	color: var(--text-color);
+
+	cursor: pointer;
+	transition:
+		background-color 0.3s linear,
+		color 0.3s linear;
+}
+
+.btn__primary {
+	background-color: var(--main-color);
+}
+
+.btn__primary:hover {
+	background-color: var(--main-color-hover);
+}
+
+.btn__secondary {
+	background-color: var(--secondary-color);
+}
+
+.btn__secondary:hover {
+	background-color: var(--secondary-color-hover);
+	color: var(--secondary-text-color);
+}
+
+.btn__tertiary {
+	background: none;
+}
+
+.btn__tertiary:hover {
+	text-decoration: underline;
+}
+
+/* Estilização do layout principal */
+
+.header,
+.footer {
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: var(--secondary-color);
+}
+
+/* HEADER */
+
+.header {
+	padding: 1.5rem;
+}
+
+.header__nav {
+	display: flex;
+	gap: 1rem;
+}
+
+/* BODY */
+
+.container > main {
+	flex: 1;
+
+	background-color: var(--main-color);
+}
+
+/* FOOTER */
+
+.footer {
+	padding: 0.6rem 1.5rem;
+}
+
+.footer span {
+	font-size: var(--font-size-default);
+	color: var(--text-color);
+}
+
+.footer__links {
+	display: flex;
+	gap: 2rem;
+}
+
+.footer__links a {
+	color: var(--text-color);
+
+	transition: transform 0.3s ease-in-out;
+}
+
+.footer__links a:hover {
+	transform: scale(1.25) translateY(-5px);
+}
+
+/* Componentes gerais */
+
+.title {
+	padding: 0.4rem 0;
+	border-bottom: 1px solid rgba(5, 5, 5, 0.8);
+
+	text-align: center;
+	font-size: 3.5rem;
+	letter-spacing: 2px;
+}
