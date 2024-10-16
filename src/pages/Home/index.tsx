@@ -30,10 +30,11 @@ export function Home() {
 
 						<div className="home__content--button">
 							<Button
-								className="btn btn__secondary"
-								text="Começar agora"
+								colorClass="btn__secondary"
 								onClickFunc={() => navigate("/cadastrar")}
-							/>
+							>
+								Começar agora
+							</Button>
 						</div>
 					</section>
 				</div>
