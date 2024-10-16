@@ -1,13 +1,13 @@
 interface ButtonProps {
-	text: string;
+	children: string;
 	onClickFunc: () => void;
-	className: string;
+	colorClass: string;
 }
 
-export function Button({ text, onClickFunc, className }: ButtonProps) {
+export function Button({ children, onClickFunc, colorClass }: ButtonProps) {
 	return (
-		<button className={className} onClick={onClickFunc}>
-			{text}
+		<button className={`btn btn__large ${colorClass}`} onClick={onClickFunc}>
+			{children}
 		</button>
 	);
 }
