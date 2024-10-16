@@ -39,49 +39,6 @@ img {
 	flex-direction: column;
 }
 
-.logo {
-	width: 13rem;
-}
-
-.btn {
-	padding: 0.8rem 2rem;
-	border: none;
-	border-radius: 1rem;
-
-	font-size: var(--font-size-default);
-	color: var(--text-color);
-
-	cursor: pointer;
-	transition:
-		background-color 0.3s linear,
-		color 0.3s linear;
-}
-
-.btn__primary {
-	background-color: var(--main-color);
-}
-
-.btn__primary:hover {
-	background-color: var(--main-color-hover);
-}
-
-.btn__secondary {
-	background-color: var(--secondary-color);
-}
-
-.btn__secondary:hover {
-	background-color: var(--secondary-color-hover);
-	color: var(--secondary-text-color);
-}
-
-.btn__tertiary {
-	background: none;
-}
-
-.btn__tertiary:hover {
-	text-decoration: underline;
-}
-
 /* Estilização do layout principal */
 
 .header,
@@ -149,4 +106,54 @@ img {
 	text-align: center;
 	font-size: 3.5rem;
 	letter-spacing: 2px;
+}
+
+.logo {
+	width: 13rem;
+}
+
+.btn {
+	border: none;
+	border-radius: 1rem;
+
+	font-size: var(--font-size-default);
+	color: var(--text-color);
+
+	cursor: pointer;
+	transition:
+		background-color 0.3s linear,
+		color 0.3s linear;
+}
+
+.btn__large {
+	padding: 0.8rem 2rem;
+}
+
+.btn__small {
+	padding: 0.8rem 1.2rem;
+}
+
+.btn__primary {
+	background-color: var(--main-color);
+}
+
+.btn__primary:hover {
+	background-color: var(--main-color-hover);
+}
+
+.btn__secondary {
+	background-color: var(--secondary-color);
+}
+
+.btn__secondary:hover {
+	background-color: var(--secondary-color-hover);
+	color: var(--secondary-text-color);
+}
+
+.btn__tertiary {
+	background: none;
+}
+
+.btn__tertiary:hover {
+	text-decoration: underline;
 }
