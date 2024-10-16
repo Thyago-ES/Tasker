@@ -24,19 +24,21 @@ export function NavBar({ logged }: NavBarProps) {
 			<Logo />
 			<nav className="header__nav">
 				<Button
-					className="btn btn__tertiary"
-					text={logged ? "Minhas áreas" : "Entrar"}
+					colorClass="btn__tertiary"
 					onClickFunc={() =>
 						logged
 							? toNavigate(`/${formatNameForURL("Thyago Rafael")}/meu-espaco`)
 							: toNavigate("/entrar")
 					}
-				/>
+				>
+					{logged ? "Minhas áreas" : "Entrar"}
+				</Button>
 				<Button
-					className="btn btn__primary"
-					text={logged ? "Sair" : "Cadastrar"}
+					colorClass="btn__primary"
 					onClickFunc={() => (logged ? userLogout : toNavigate("/cadastrar"))}
-				/>
+				>
+					{logged ? "Sair" : "Cadastrar"}
+				</Button>
 			</nav>
 		</header>
 	);
