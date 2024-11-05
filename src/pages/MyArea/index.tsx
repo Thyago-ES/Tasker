@@ -1,6 +1,6 @@
 import { FaPlus, FaArrowRight } from "react-icons/fa";
 
-import { Title } from "../../components/Title";
+import { Title } from "../../components/text/Title";
 import { useNavigate } from "react-router-dom";
 
 const areaList = [
