@@ -1,0 +1,38 @@
+@import url("./components/components.css");
+@import url("./components/responsiveComponents.css");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Epilogue", sans-serif;
+	font-weight: bold;
+}
+
+:root {
+	--main-color: #faf2d9;
+	--main-color-hover: #ded8c7;
+	--secondary-color: #dec985;
+	--secondary-color-hover: #baa45c;
+	--text-color: #050505;
+	--secondary-text-color: #f5f5f5;
+	--font-size-default: 1.2rem;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--main-color);
+}
+
+#root {
+	width: 100%;
+	min-height: 100vh;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
