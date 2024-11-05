@@ -1,5 +1,5 @@
-import { FormButton } from "../../components/FormButton";
-import { Title } from "../../components/Title";
+import { FormButton } from "../../components/ui/FormButton";
+import { Title } from "../../components/text/Title";
 
 export function Login() {
 	return (
