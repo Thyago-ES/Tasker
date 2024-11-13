@@ -7,6 +7,10 @@ import "./Home.css";
 export function Home() {
 	const navigate = useNavigate();
 
+	const redirectToRegisterPage = () => {
+		navigate("/cadastrar");
+	};
+
 	return (
 		<>
 			<main className="home">
@@ -31,7 +35,7 @@ export function Home() {
 						<div className="home__content--button">
 							<Button
 								colorClass="btn__secondary"
-								onClickFunc={() => navigate("/cadastrar")}
+								onClickFunc={redirectToRegisterPage}
 							>
 								Começar agora
 							</Button>
